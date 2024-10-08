@@ -2,6 +2,7 @@
 
 namespace Svr\Core\Seeders;
 
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
@@ -16,6 +17,7 @@ class table_data_system_users_notifications_messages extends Seeder
 
         DB::table('system.system_users_notifications_messages')->insert([
             [
+                "message_id" => "1",
                 "notification_type" => "application_complete_full",
                 "message_description" => "Заявка полностью отработана",
                 "message_title_front" => "Заявка {{application_id}} сменила статус",
@@ -25,8 +27,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "2",
                 "notification_type" => "application_complete_partial",
                 "message_description" => "Заявка частично отработана",
                 "message_title_front" => "Заявка {{application_id}} сменила статус",
@@ -36,8 +41,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "3",
                 "notification_type" => "application_animal_add",
                 "message_description" => "Добавление животного в заявку",
                 "message_title_front" => "Добавление записей в заявку {{application_id}}",
@@ -47,8 +55,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "4",
                 "notification_type" => "application_animal_delete",
                 "message_description" => "Удаление животного из заявки",
                 "message_title_front" => "Удаление записей из заявки {{application_id}}",
@@ -58,8 +69,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "5",
                 "notification_type" => "user_password_restore",
                 "message_description" => "Восстановление пароля пользователя",
                 "message_title_front" => "",
@@ -72,8 +86,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "disabled",
                 "message_status_email" => "enabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "6",
                 "notification_type" => "user_password_change",
                 "message_description" => "Смена пароля пользователя",
                 "message_title_front" => "",
@@ -86,8 +103,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "disabled",
                 "message_status_email" => "enabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "7",
                 "notification_type" => "user_create",
                 "message_description" => "Создание пользователя",
                 "message_title_front" => "",
@@ -101,8 +121,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "disabled",
                 "message_status_email" => "enabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "8",
                 "notification_type" => "application_created",
                 "message_description" => "Создание заявки",
                 "message_title_front" => "Заявка {{application_id}} сменила статус",
@@ -112,8 +135,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "9",
                 "notification_type" => "application_prepared",
                 "message_description" => "Формирование заявки",
                 "message_title_front" => "Заявка {{application_id}} сменила статус",
@@ -123,8 +149,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "10",
                 "notification_type" => "application_sent",
                 "message_description" => "Отправка заявки",
                 "message_title_front" => "Заявка {{application_id}} сменила статус",
@@ -134,8 +163,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "11",
                 "notification_type" => "integration_selex_good",
                 "message_description" => "Получение животных из СЕЛЕКСА - УСПЕХ",
                 "message_title_front" => "Интеграция из СЕЛЭКС в СВР",
@@ -145,8 +177,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "12",
                 "notification_type" => "integration_selex_guid_good",
                 "message_description" => "Отправка GUID в СЕЛЕКС - УСПЕХ",
                 "message_title_front" => "Передача уникального номера из СВР в СЕЛЭКС",
@@ -156,6 +191,8 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
                 "message_id" => "13",
@@ -168,8 +205,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "14",
                 "notification_type" => "integration_selex_bad",
                 "message_description" => "Получение животных из СЕЛЕКСА - НЕУДАЧА",
                 "message_title_front" => "Интеграция из СЕЛЭКС в СВР",
@@ -179,8 +219,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "15",
                 "notification_type" => "integration_selex_guid_bad",
                 "message_description" => "Отправка GUID в СЕЛЕКС - НЕУДАЧА",
                 "message_title_front" => "Передача уникального номера из СВР в СЕЛЭКС",
@@ -190,8 +233,11 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
             [
+                "message_id" => "16",
                 "notification_type" => "integration_herriot_bad",
                 "message_description" => "Отправка данных в Хорриот - НЕУДАЧА",
                 "message_title_front" => "Интеграция из СВР в Хорриот",
@@ -201,7 +247,10 @@ class table_data_system_users_notifications_messages extends Seeder
                 "message_status_front" => "enabled",
                 "message_status_email" => "disabled",
                 "message_status" => "enabled",
+                "message_created_at" => "2024-05-22 14:10:17.670102",
+                "update_at" => "2024-05-22 14:10:17.670102",
             ],
         ]);
     }
 }
+

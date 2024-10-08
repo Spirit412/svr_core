@@ -27,12 +27,10 @@ License
 Seeders
 ------------
 
-`php artisan db:seed --class=Svr\Core\Seeders\DatabaseSeeder`
+Отдельный запуск сидов system
 
+`php artisan db:seed --class=Svr\Core\Seeders\SystemDatabaseSeeder`
 
-Lang
-------------
-`php artisan db:seed --class=Svr\Core\Seeders\DatabaseSeeder` svr-core-lang
 
 Реализованы кастомные поля и методы:
 
