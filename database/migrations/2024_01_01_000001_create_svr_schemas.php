@@ -24,7 +24,7 @@ return new class extends Migration {
     {
 
         DB::statement('CREATE SCHEMA IF NOT EXISTS system');
-        DB::statement("COMMENT ON SCHEMA data IS 'Системная схема'");
+        DB::statement("COMMENT ON SCHEMA system IS 'Системная схема'");
 
         DB::statement("CREATE TYPE system.system_status AS ENUM (".SystemStatusEnum::get_value_str().")");
         DB::statement("CREATE TYPE system.system_status_delete AS ENUM (".SystemStatusDeleteEnum::get_value_str().")");
