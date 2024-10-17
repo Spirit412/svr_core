@@ -22,23 +22,6 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        DB::statement('CREATE SCHEMA IF NOT EXISTS data');
-        DB::statement("COMMENT ON SCHEMA data IS 'Основная схема'");
-
-        DB::statement('CREATE SCHEMA IF NOT EXISTS directories');
-        DB::statement("COMMENT ON SCHEMA data IS 'Схема справочников'");
-
-        DB::statement('CREATE SCHEMA IF NOT EXISTS logs');
-        DB::statement("COMMENT ON SCHEMA data IS 'Схема логов'");
-
-        DB::statement('CREATE SCHEMA IF NOT EXISTS raw');
-        DB::statement("COMMENT ON SCHEMA data IS 'Необработанные данные'");
-
-        DB::statement('CREATE SCHEMA IF NOT EXISTS search');
-        DB::statement("COMMENT ON SCHEMA data IS 'Схема для функций поиска'");
-
-        DB::statement('CREATE SCHEMA IF NOT EXISTS service');
-        DB::statement("COMMENT ON SCHEMA data IS 'Сервисная схема'");
 
         DB::statement('CREATE SCHEMA IF NOT EXISTS system');
         DB::statement("COMMENT ON SCHEMA data IS 'Системная схема'");
@@ -62,11 +45,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        DB::statement('DROP SCHEMA IF EXISTS data CASCADE');
-        DB::statement('DROP SCHEMA IF EXISTS directories CASCADE');
-        DB::statement('DROP SCHEMA IF EXISTS logs CASCADE');
-        DB::statement('DROP SCHEMA IF EXISTS search CASCADE');
-        DB::statement('DROP SCHEMA IF EXISTS service CASCADE');
         DB::statement('DROP SCHEMA IF EXISTS system CASCADE');
 
         DB::statement('DROP TYPE IF EXISTS system.system_status');
