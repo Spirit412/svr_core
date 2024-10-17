@@ -12,7 +12,9 @@
     ],
     "autoload": {
         "psr-4": {
-            "Svr\\Core\\": "src/"
+            "Svr\\Core\\": "src/",
+            "Svr\\Core\\Factories\\": "database/factories/",
+            "Svr\\Core\\Seeders\\": "database/seeders/"
         },
         "files": ["src/bootstrap.php"]
     },
